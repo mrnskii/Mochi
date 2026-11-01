@@ -1,0 +1,30 @@
+name: mochi_app
+description: Configure and control Mochi, your virtual pet, over Bluetooth.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^1.36.8
+  shared_preferences: ^2.2.0
+  audioplayers: ^6.0.0
+
+# These two packages' newest versions need a native "jni" build that fails on Windows
+# (clang: no such file ... global_jni_env.c.o). These older versions work the same without it.
+dependency_overrides:
+  path_provider_android: 2.2.23
+  shared_preferences_android: 2.4.28
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/videos/
+    - assets/audio/
+    - assets/sounds/

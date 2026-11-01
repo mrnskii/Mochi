@@ -1,0 +1,51 @@
+# Flutter / Dart
+mochi_app/build/
+mochi_app/.dart_tool/
+mochi_app/.flutter-plugins
+mochi_app/.flutter-plugins-dependencies
+mochi_app/.packages
+mochi_app/.pub-cache/
+mochi_app/.pub/
+
+# Android
+mochi_app/android/.gradle/
+mochi_app/android/local.properties
+mochi_app/android/key.properties
+mochi_app/android/app/debug/
+mochi_app/android/app/profile/
+mochi_app/android/app/release/
+*.jks
+*.keystore
+
+# Generic build output
+**/build/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# PlatformIO / Arduino
+.pio/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets (wag i-push)
+secrets.h
+.env
+
+# Media (sounds, songs, videos) - hindi i-push dahil sa copyright
+# Nananatili ang mga folder (.gitkeep) para hindi mag-error ang flutter build
+mochi_app/assets/sounds/*
+!mochi_app/assets/sounds/.gitkeep
+mochi_app/assets/audio/*
+!mochi_app/assets/audio/.gitkeep
+mochi_app/assets/videos/*
+!mochi_app/assets/videos/.gitkeep
+
+# SD card files (kung nasa repo folder mo)
+DASAI SOUNDS/
+*.mp3
+*.mvid
